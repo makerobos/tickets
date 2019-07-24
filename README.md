@@ -96,7 +96,9 @@ def post():
   5. In This Case We Will learn How To get the Status By Using Ticket Id. So We Will Choose Do You Have Ticket Id
   6. Now in Next Run If Card we will check the condition (HasTicketId contains Do You Have) and If This Condition is True Than we Will s
      select for the Next Card which is Nothing But a Go To Card Which Will Redirected It To the GetTicketById Block.
-     Make Sure You Will Tick Mark To the Next Card. If This Condition is True then Only Go To Block perform Redirection 
+     Make Sure You Will Tick Mark To the Next Card. If This Condition is True then Only Go To Block perform Redirection
+  7. Now GetTicketById   Block
+  8. 
   
       
       
