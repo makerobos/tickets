@@ -1,4 +1,4 @@
-# Tickets                                  Zendesk is a Customer Support Ticket System 
+# Tickets                                Zendesk is a Customer Support Ticket System 
 
 
 
@@ -23,10 +23,10 @@
 => We Can Get All Ticket Json Response Through this Url  https://puneetmakerobos.zendesk.com/api/v2/tickets.json
 You Will Replace This Url According To Your Login Credential 
 
-=> Now User Credential: puneetmakerobos4@gmail.com/token
+* Now User Credential: puneetmakerobos4@gmail.com/token
 Change It Also According To Your Businees Email Credential
 
-=> Password: To Create This Password Read Zendesk API Authentication and Authorization 
+* Password: To Create This Password Read Zendesk API Authentication and Authorization 
 It Will Generate Like This: sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J
 
-  
+* Now We Will Start To Create The Ticket. 
