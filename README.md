@@ -61,8 +61,11 @@ def post():
     })
 
 ```
-* Through This We Have To Get a Ticket Id as a Response in The Table Format 
-* See Below The Overall ChatBot Response 
+* Through This We get a Ticket Id as a Response in The Table Format 
+* See Below The Overall ChatBot Response
+
+  ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatBot.jpeg)
+
 
 
   
