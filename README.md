@@ -82,6 +82,8 @@ def post():
       
       ![](https://github.com/makerobos/tickets/blob/master/status_by_ticketid_getticblock.PNG)
       
+  4. Check Your Status Using Then Two
+      
       
       
   
