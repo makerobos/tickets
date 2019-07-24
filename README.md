@@ -80,7 +80,7 @@ def post():
       * Then Redirected it to the Our New Block which is Get Ticket 
   3. In Our Get Ticket Block
       
-      ![](https://github.com/makerobos/tickets/blob/master/StatusByTicketGetTickBlock.PNG)
+      ![](https://github.com/makerobos/tickets/blob/master/status_by_ticketid_getticblock.PNG)
       
       
       
