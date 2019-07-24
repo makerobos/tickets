@@ -29,4 +29,9 @@ Change It Also According To Your Businees Email Credential
 * Password: To Create This Password Read Zendesk API Authentication and Authorization 
 It Will Generate Like This: sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J
 
-* Now We Will Start To Create The Ticket. 
+* Now We Will Start To Create The Ticket.
+ 	1. First We Will Go To The Makerobos Plaform.
+  2. Then Create the block With The name of Ticket
+  3. ![]()
+  
+
