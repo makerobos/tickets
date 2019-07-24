@@ -66,7 +66,16 @@ def post():
 
   ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatBot.jpeg)
  
-## Now We Will Get The Status of the Ticket By Using Ticket ID 
+## Now We Will Get The Status of the Ticket By Using Ticket ID
+  1. Go To The Makerobos Platform.
+  2. In Our Ticket Block
+      * Hello Greetings Of the Day 
+      * Are You Facing Some Problem 
+      * If Client Say No Then 
+    
+
+
+
 
 
 
