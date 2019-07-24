@@ -99,7 +99,7 @@ def post():
      Make Sure You Will Tick Mark To the Next Card. If This Condition is True then Only Go To Block perform Redirection
   7. Now GetTicketById   Block
   
-  8. ![](https://github.com/makerobos/tickets/blob/master/getticketbyid_block.PNG)
+     ![](https://github.com/makerobos/tickets/blob/master/getticketbyid_block.PNG)
   
   9. Work Under Progress
       
