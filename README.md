@@ -133,8 +133,10 @@ def post():
                           }
                       ]
                   })
-       ```
-      
+        ```
+   11. See Below The Overall ChatBot Response 
+   
+       ![](https://github.com/makerobos/tickets/blob/master/get_ticketbyid_chatbot.jpeg)      
       
       
       
