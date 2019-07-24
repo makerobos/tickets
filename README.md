@@ -35,9 +35,29 @@ It Will Generate Like This: sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J
   3. In Which We Will Take Total 3 Cards (See Structure Below)
   4. ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatFirst.PNG)
 
-* Now We Have To Write The code For Json Api In This Documentation I Have Created This API In Flask which is Python Framework 
+* Now We Have To Write The code For Json Api In This Documentation I Have Created This API In Flask which is a Python Framework.
+```
+@app.route('/postticket/', methods=['POST'])
+def post():
+    problem = request.form.get('Problem')
+    Name = request.form.get('Name')
+    mail = request.form.get('Mail')
+    final_subject = Name +' Having an Issue'
+    data = {"ticket": {"subject": final_subject, "comment": {"body": problem}, "external_id": mail}}
+    response = requests.post(url, auth=(user, pwd), headers={"Content-Type": "application/json"}, data=json.dumps(data))
+    return jsonify({
+        "entries": [
+            {
+                "template_type": "message",
+                "message": '''<table border=1 style="text-align:center;"><tr><td colspan="2">Note This Id For Future Reference</td></tr><tr><td>Ticket ID
+                           </td><td>'''+format((response.json()["ticket"]["id"]))+'''</td></tr><tr><td>Your Email</td><td>'''+mail+'''</td></tr><tr><td>Pro
+                           blem</td><td>'''+problem+'''</td></tr><tr><td>Created At</td><td>'''+format((response.json()["ticket"]["created_at"]))+'''</td>
+                           </tr><td>Assignee Id</td><td>'''+format((response.json()["ticket"]["assignee_id"]))+'''</td></table>'''
+            }
+        ]
+    })
 
-
+```
   
   
 
