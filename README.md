@@ -101,7 +101,41 @@ def post():
   
      ![](https://github.com/makerobos/tickets/blob/master/getticketbyid_block.PNG)
   
-  9. Work Under Progress
+  9. Now in this First Card is User Input in which Bot Says to User. Ok Give me Your Ticket Id and Then User Will Provide Their Ticket 
+     Id and The Id Will Be Stored in the {{TicketID}} attribute 
+  
+  10. Our Next Card is Json Api In Which We Pass the Url Along With the Parameter TicketID. To get The TicketID in Our API To Process         our Request.
+  
+      ```
+      @app.route('/getticket/', methods=['GET'])
+      def get():
+          id = request.args.get('TicketID')
+          if id:
+              print(id)
+              url = 'https://puneetmakerobos.zendesk.com/api/v2/tickets/' + id + '.json'
+              response = requests.get(url, auth=(user, pwd))
+              print(response.json()["ticket"]["status"])
+              if response.status_code == 404:
+                  return jsonify({
+                      "entries": [
+                          {
+                              "template_type": "message",
+                              "message": "This is Not A Registered ID "
+                          }
+                      ]
+                  })
+              if response:
+                  return jsonify({
+                      "entries": [
+                          {
+                              "template_type": "message",
+                              "message": '''<table border=1 style="text-align:center;"><tr><td colspan="2">Details:-</td></tr><tr><td>Your Problem</td><td style="padding:5px";>''' + (response.json()["ticket"]["description"]) + '''</td></tr><tr><td>Status is</td><td style="padding:5px";>''' + (response.json()["ticket"]["status"]) + '''</td></tr></table>'''
+                          }
+                      ]
+                  })
+       ```
+      
+      
       
       
       
