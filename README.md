@@ -81,6 +81,7 @@ def post():
   3. In Our Get Ticket Block
       
       ![](https://github.com/makerobos/tickets/blob/master/status_by_ticketid_getticblock.PNG)
+      ![](https://github.com/makerobos/tickets/blob/master/gotoblock_getticketbyid.PNG)
       
   4. Check Your Status Using Then Two
       
