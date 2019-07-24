@@ -73,7 +73,13 @@ def post():
       * Are You Facing Some Problem 
       * If Client Say No, Then
       
-      ![](https://github.com/makerobos/tickets/blob/master/StatusByTicketIdfirst.PNG)
+       ![](https://github.com/makerobos/tickets/blob/master/StatusByTicketIdfirst.PNG)
+       
+      * Do You Want To Check The Status 
+      * If Client Say Yes 
+      * Then Redirected it to the Our New Block which is Get Ticket 
+  3. In Our Get Ticket Block 
+  
         
         
       
