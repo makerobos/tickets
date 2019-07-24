@@ -64,12 +64,9 @@ def post():
 * Through This We get a Ticket Id as a Response in The Table Format 
 * See Below The Overall ChatBot Response
 
-  ![](https://github.com/makerobos/tickets/blob/master/create_ticket_chatbot.jpeg#createticket)
+  ![](https://github.com/makerobos/tickets/blob/master/create_ticket_chatbot.jpeg)
   
-  img[src*="#createticket"] {
-   border: 1px solid blue;
-}
- 
+  
 ## Now We Will Get The Status of the Ticket By Using Ticket ID
   1. Go To The Makerobos Platform.
   2. In Our Ticket Block
