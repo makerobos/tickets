@@ -36,6 +36,7 @@ It Will Generate Like This: sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J
   4. ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatFirst.PNG)
   5. Then Create a block With New Ticket
   6. ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatSecond.PNG)
+  7. ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatThird.PNG)
 
 * Now We Have To Write The code For Json Api In This Documentation I Have Created This API In Flask which is a Python Framework.
 ```
@@ -60,6 +61,10 @@ def post():
     })
 
 ```
+* Through This We Have To Get a Ticket Id as a Response in The Table Format 
+* See Below The Overall ChatBot Response 
+
+
   
   
 
