@@ -85,7 +85,19 @@ def post():
       
       ![](https://github.com/makerobos/tickets/blob/master/gotoblock_getticketbyid.PNG)
       
-  4. Check Your Status Using Then Two
+  4. Check Your Status Using:- We Have Two Options for that
+       * Do You Have Ticket Id
+       * Without Having Ticket Id 
+       
+        Their Value Stored in the {{HasTicketId}} attribute i.e If the Client Will CHoose Do You Have Ticket Id or Without Having Ticket         Id Their Chosen Vaue Will will Be Stored In The Attribute. And The Attribute is Nothing But {{HasTicketId}} You Can Give any of
+        name. This is Not A Fixed Name. But Give Some meaningful Name. Which Make Less Chance Of Creating Error When You Will use this 
+        attribute in the future. 
+  
+  5. In This Case We Will learn How To get the Status By Using Ticket Id. So We Will Choose Do You Have Ticket Id
+  6. Now in Next Run If Card we will check the condition (HasTicketId contains Do You Have) and If This Condition is True Than we Will s
+     select for the Next Card which is Nothing But a Go To Card Which Will Redirected It To the GetTicketById Block.
+     Make Sure You Will Tick Mark To the Next Card. If This Condition is True then Only Go To Block perform Redirection 
+  
       
       
       
