@@ -140,7 +140,7 @@ def post():
       
       
 ## Now We Will Get The Status of the Ticket through the Problem (Without Using Ticket Id)
-1. Go To The Makerobos Platform.
+  1. Go To The Makerobos Platform.
   2. In Our Ticket Block
       * Hello Greetings Of the Day 
       * Are You Facing Some Problem 
@@ -167,13 +167,48 @@ def post():
           4.2 All Problem Status 
         
         4.1 Looking For a Particular Problem Status
-          * This Below Diagram is Nothing But The Continuation of GetTicket Block
+          1. This Below Diagram is Nothing But The Continuation of GetTicket Block
           
         ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probFirst.PNG)
         
         ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probSecond.PNG)
         
         ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probThird.PNG)
+        
+        2. HasTicketId contains Without Having Ticket Id At This Time If This Condition is True Than Our Next 2 Card Will Be Process.              Than Our Next Card Process Start In Which Bot Will take The Email Id From The User And Stored in The {{Email}} Attribute
+           And Says OK According To The Next Card Situation. Than Ask For A Looking For a Paticular Problem Status and All Problem                  Status. In This case We Will Choose Looking For a Particular Problem Status And Particluar Choosed Section Value Stored in 
+           Attribute {{problem_Status}}. Than Next Card Condition If The {{problem_Status}} contains Looking Foa a Partcular. If This 
+           Condition Is True Than Next 2 Card Will Came in The Picture. According To Next Card Situation Bot Will Ask To The User Tell 
+           Me The Problem Once Again. So I can Check The Status For that Problem and their Value Which is Given By The User Will Store 
+           in the Attribute {{particular_Problem}} And In The Next Card Our Json APi Card Will COme in The Picture in Which We Will PAss            the particular_Problem, and Email as A Parameter Throughout Which We Can Search For The Status.
+        3. Now We Will See The Flask Api Code 
+           Note In This Flask API Code Compulsory You Will get the particular_Problem and email Which You Will Pass In The Json Api Card
+           ```
+           email = request.args.get('Email')
+           particular_Problem = request.args.get('particular_Problem')
+           ```
+        4. Flask API Code   
+           ```
+           elif particular_Problem and email:
+               query = particular_Problem
+               url = 'https://puneetmakerobos.zendesk.com/api/v2/tickets.jsonn?external_id=' + email + ''
+               response = requests.get(url, auth=(user, pwd))
+               final_list = []
+               _map = {}
+               for ticket in response.json()['tickets']:
+                    _map[ticket['description']] = ticket
+                    final_list.append(ticket["description"])
+               a = process.extractOne(query, final_list)[0]
+               return jsonify({
+                      "entries":[
+                        {
+                          "template_type": "message",
+                          "message": '''<table border=1 style="text-align:center;"><tr><td>Problem</td><td>''' + particular_Problem +                                        '''</td></tr><tr><td>Status</td><td>''' + _map[a]["status"] + '''</td></tr></table>'''
+                        }
+                      ]
+                    })
+             ```
+        
         
         
         
