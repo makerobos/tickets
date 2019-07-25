@@ -1,4 +1,4 @@
-# Tickets                                Zendesk is a Customer Support Ticket System 
+# Tickets                                Customer Support Ticket System Using FrontMan 
 
 
 
@@ -16,11 +16,11 @@
 
 ![](https://github.com/makerobos/tickets/blob/master/SupportApi.PNG)
   To Get Access To The APIs Three Things Must Require:-
-    1. Url 
+    1. EndPoint 
     2. User
     3. Password 
   
-=> We Can Get All Ticket Json Response Through this Url  https://puneetmakerobos.zendesk.com/api/v2/tickets.json
+=> We Can Get All Ticket Json Response Through this EndPoint  https://puneetmakerobos.zendesk.com/api/v2/tickets.json
 You Will Replace This Url According To Your Login Credential 
 
 * Now User Credential: puneetmakerobos4@gmail.com/token
