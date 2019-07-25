@@ -216,6 +216,8 @@ def post():
         
         4.2 Same Condition. We Are in GetTicket Block If User Will Choose All Problem Status Then Chosen All Problem Status Stored in               the {{problem_status}}. Read Previous Example Clearly For Better Understanding. 
         1. See Below The Story Builder 
+            
+           ![](https://github.com/makerobos/tickets/blob/master/allproblemstatus.PNG)
            
            
            
