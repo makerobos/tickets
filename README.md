@@ -162,11 +162,12 @@ def post():
        * Without Having Ticket Id
        
         Now In This Case We Will learn If User Will Press Without Using Ticket Id
-          * In This We Have Two More Cases:-
+          * In This We Have Two More Cases
           4.1 Looking For A Particular Problem Status 
           4.2 All Problem Status 
         
-        4.1 Looking For A Particular Problem Status
+        4.1 Looking For a Particular Problem Status
+          * This Below Diagram is Nothing But The Continuation Of Get Ticket Block 
         
             
 
