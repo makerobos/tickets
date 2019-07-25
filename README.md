@@ -30,7 +30,6 @@ Change It Also According To Your Businees Email Credential
 It Will Generate Like This: sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J
 
 ## Now We Will Start To Create The Ticket.
-  We Will Take The Problem From The User With Their Name And Email And Generate Their Ticket Id 
  	1. First We Will Go To The Makerobos Plaform.
   2. Then Create the block With The name of Ticket
   3. In Which We Will Take Total 3 Cards (See Structure Below)
@@ -141,6 +140,35 @@ def post():
       
       
 ## Now We Will Get The Status of the Ticket through the Problem (Without Using Ticket Id)
+1. Go To The Makerobos Platform.
+  2. In Our Ticket Block
+      * Hello Greetings Of the Day 
+      * Are You Facing Some Problem 
+      * If User Say No, Then
+      
+       ![](https://github.com/makerobos/tickets/blob/master/StatusByTicketIdfirst.PNG)
+       
+      * Do You Want To Check The Status 
+      * If Client Say Yes 
+      * Then Redirected it to the Our New Block which is Get Ticket 
+  3. In Our Get Ticket Block
+      
+      ![](https://github.com/makerobos/tickets/blob/master/status_by_ticketid_getticblock.PNG)
+      
+      ![](https://github.com/makerobos/tickets/blob/master/gotoblock_getticketbyid.PNG)
+      
+  4. Check Your Status Using:- We Have Two Options for that
+       * Do You Have Ticket Id
+       * Without Having Ticket Id
+       
+        Now In This Case We Will learn If User Will Press Without Using Ticket Id
+          * In This We Have Two More Cases:-
+          4.1 Looking For A Particular Problem Status 
+          4.2 All Problem Status 
+        
+        4.1 Looking For A Particular Problem Status
+        
+            
 
       
   
