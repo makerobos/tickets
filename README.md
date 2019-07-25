@@ -214,7 +214,12 @@ def post():
       
         ## Now We Will Get The Status of all the Tickets (How Many are open, How Many are closed, How many are pending) 
         
-        4.2 
+        4.2 Same Condition. We Are in GetTicket Block If User Will Choose All Problem Status Then Chosen All Problem Status Stored in               the {{problem_status}}. Read Previous Example Clearly For Better Understanding. 
+        1. See Below The Story Builder 
+           
+           
+           
+           
         
         
         
