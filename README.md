@@ -220,7 +220,49 @@ def post():
            ![](https://github.com/makerobos/tickets/blob/master/allproblemstatus.PNG)
            
         2. problem_status Now Contains All Problem Status If This Condition is True Than Next 2 Cards Come In The Picture In First Card            Bot Will say Ok You Want Your All Problem Status , And Then Json Api Card In Which We Pass Email As A Parameter To The Flask            Api. Note We Use Email in this above Case And in This Case Because Through This email We Will Find The User as Unique. 
-        3. See Below For Json Api Code 
+        3. Now We Will See The Falsk API Code 
+           Note In This Flask API Code Compulsory You Will get the Email which You Will Pass In The Json Api Card
+           ```
+           email = request.args.get('Email')
+           ```
+           ```
+           elif email:
+               url = 'https://puneetmakerobos.zendesk.com/api/v2/tickets.jsonn?external_id=' + email + ''
+                response = requests.get(url, auth=(user, pwd))
+                open_List = []
+                pending_List = []
+                solved_List = []
+                for a in response.json()['tickets']:
+                    if a["status"] == 'open':
+                        open_List.append('open')
+                    if a["status"] == 'pending':
+                        pending_List.append('pending')
+                    if a["status"] == 'solved':
+                        solved_List.append('solved')
+                total_Open = len(open_List)
+                total_pending = len(pending_List)
+                total_solved = len(solved_List)
+                if len(response.json()['tickets']):
+                    return jsonify({
+                        "entries": [
+                            {
+                                "template_type": "message",
+                                "message": '''<table border=1 style="text-align:center;"><tr><td>Submit as Open</td><td>''' + str(
+                                    total_Open) + '''</td></tr><tr><td>Submit as Pending</td><td>''' + str(total_pending) + '''</td></tr><tr><td>Submit as Solved</td><td>''' + str(total_solved) + '''</td></tr></table>
+                                            '''
+                            }
+                        ]
+                    })
+                else:
+                    return jsonify({
+                        "entries": [
+                            {
+                                "template_type": "message",
+                                "message": "Nothing Found"
+                            }
+                        ]
+                    })            
+           ```
            
            
            
