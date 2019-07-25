@@ -167,10 +167,9 @@ def post():
           4.2 All Problem Status 
         
         4.1 Looking For a Particular Problem Status
-        
           * This Below Diagram is Nothing But The Continuation of GetTicket Block
           
-          ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probFirst.PNG)
+        ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probFirst.PNG)
           
         
             
