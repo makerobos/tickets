@@ -263,7 +263,10 @@ def post():
                         ]
                     })            
            ```
-        4. See Below The Overall Chat Response For That 
+        4. See Below The Overall Chat Response For That
+        
+           ![](https://github.com/makerobos/tickets/blob/master/ChatAllProblemStatus.jpeg)
+           
            
            
            
