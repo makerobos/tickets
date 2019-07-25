@@ -219,6 +219,10 @@ def post():
             
            ![](https://github.com/makerobos/tickets/blob/master/allproblemstatus.PNG)
            
+        2. problem_status Now Contains All Problem Status If This Condition is True Than Next 2 Cards Come In The Picture In First Card            Bot Will say Ok You Want Your All Problem Status , And Then Json Api Card In Which We Pass Email As A Parameter To The Flask            Api. Note We Use Email in this above Case And in This Case Because Through This email We Will Find The User as Unique. 
+        3. See Below For Json Api Code 
+           
+           
            
            
            
