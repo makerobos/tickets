@@ -30,6 +30,7 @@ Change It Also According To Your Businees Email Credential
 It Will Generate Like This: sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J
 
 ## Now We Will Start To Create The Ticket.
+  We Will Take The Problem From The User With Their Name And Email And Generate Their Ticket Id 
  	1. First We Will Go To The Makerobos Plaform.
   2. Then Create the block With The name of Ticket
   3. In Which We Will Take Total 3 Cards (See Structure Below)
@@ -72,7 +73,7 @@ def post():
   2. In Our Ticket Block
       * Hello Greetings Of the Day 
       * Are You Facing Some Problem 
-      * If Client Say No, Then
+      * If User Say No, Then
       
        ![](https://github.com/makerobos/tickets/blob/master/StatusByTicketIdfirst.PNG)
        
@@ -89,7 +90,7 @@ def post():
        * Do You Have Ticket Id
        * Without Having Ticket Id 
        
-        Their Value Stored in the {{HasTicketId}} attribute i.e If the Client Will CHoose Do You Have Ticket Id or Without Having Ticket         Id Their Chosen Vaue Will will Be Stored In The Attribute. And The Attribute is Nothing But {{HasTicketId}} You Can Give any of
+        Their Value Stored in the {{HasTicketId}} attribute i.e If the User Will CHoose Do You Have Ticket Id or Without Having Ticket         Id Their Chosen Vaue Will will Be Stored In The Attribute. And The Attribute is Nothing But {{HasTicketId}} You Can Give any of
         name. This is Not A Fixed Name. But Give Some meaningful Name. Which Make Less Chance Of Creating Error When You Will use this 
         attribute in the future. 
   
@@ -139,7 +140,8 @@ def post():
        ![](https://github.com/makerobos/tickets/blob/master/get_ticketbyid_chatbot.jpeg)      
       
       
-      
+## Now We Will Get The Status of the Ticket through the Problem (Without Using Ticket Id)
+
       
   
         
