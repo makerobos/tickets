@@ -167,7 +167,8 @@ def post():
           4.2 All Problem Status 
         
         4.1 Looking For a Particular Problem Status
-          * This Below Diagram is Nothing But The Continuation Of Get Ticket Block 
+        
+          * This Below Diagram is Nothing But The Continuation of Get Ticket Block 
         
             
 
