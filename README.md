@@ -211,7 +211,8 @@ def post():
         5. See Below The Overall Chat Response
         
            ![](https://github.com/makerobos/tickets/blob/master/ChatLookForasingleproblem.jpeg)
-        
+      
+        4.2. ## Now We Will Get The Status of all the Tickets (How Many are open, How Many are closed, How many are pending) 
         
         
         
