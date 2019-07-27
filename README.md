@@ -8,13 +8,13 @@
 ![](https://github.com/makerobos/tickets/blob/master/images/ZendeskLogin.PNG)
 
 => After Login You Will Redirected To Your Dashbaord From Where You Can See Your Tickets Details. 
-![](https://github.com/makerobos/tickets/blob/master/DashboardLogin.PNG)
+![](https://github.com/makerobos/tickets/blob/master/images/DashboardLogin.PNG)
 
 => Now Here Comes The Steps To Create the API 
 => If You Stuck in Any Of The Steps than You Will Go throughout The (Zendesk API Documentation Support for Developers)
 => Here is the Url To Go Through The (Zendesk API Documentation for Developers) https://developer.zendesk.com/rest_api/docs/support/introduction
 
-![](https://github.com/makerobos/tickets/blob/master/SupportApi.PNG)
+![](https://github.com/makerobos/tickets/blob/master/images/SupportApi.PNG)
   To Get Access To The APIs Three Things Must Require:-
     1. EndPoint 
     2. User
@@ -33,10 +33,10 @@ It Will Generate Like This: sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J
  	1. First We Will Go To The Makerobos Plaform.
   2. Then Create the block With The name of Ticket
   3. In Which We Will Take Total 3 Cards (See Structure Below)
-  4. ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatFirst.PNG)
+  4. ![](https://github.com/makerobos/tickets/blob/master/images/CreateTicketChatFirst.PNG)
   5. Then Create a block With New Ticket
-  6. ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatSecond.PNG)
-  7. ![](https://github.com/makerobos/tickets/blob/master/CreateTicketChatThird.PNG)
+  6. ![](https://github.com/makerobos/tickets/blob/master/images/CreateTicketChatSecond.PNG)
+  7. ![](https://github.com/makerobos/tickets/blob/master/images/CreateTicketChatThird.PNG)
 
 * Now We Have To Write The code For Json Api In This Documentation I Have Created This API In Flask which is a Python Framework.
 ```
@@ -64,7 +64,7 @@ def post():
 * Through This We get a Ticket Id as a Response in The Table Format 
 * See Below The Overall ChatBot Response
 
-  ![](https://github.com/makerobos/tickets/blob/master/create_ticket_chatbot.jpeg)
+  ![](https://github.com/makerobos/tickets/blob/master/images/create_ticket_chatbot.jpeg)
   
   
 ## Now We Will Get The Status of the Ticket By Using Ticket ID
@@ -74,16 +74,16 @@ def post():
       * Are You Facing Some Problem 
       * If User Say No, Then
       
-       ![](https://github.com/makerobos/tickets/blob/master/StatusByTicketIdfirst.PNG)
+       ![](https://github.com/makerobos/tickets/blob/master/images/StatusByTicketIdfirst.PNG)
        
       * Do You Want To Check The Status 
       * If Client Say Yes 
       * Then Redirected it to the Our New Block which is Get Ticket 
   3. In Our Get Ticket Block
       
-      ![](https://github.com/makerobos/tickets/blob/master/status_by_ticketid_getticblock.PNG)
+      ![](https://github.com/makerobos/tickets/blob/master/images/status_by_ticketid_getticblock.PNG)
       
-      ![](https://github.com/makerobos/tickets/blob/master/gotoblock_getticketbyid.PNG)
+      ![](https://github.com/makerobos/tickets/blob/master/images/gotoblock_getticketbyid.PNG)
       
   4. Check Your Status Using:- We Have Two Options for that
        * Do You Have Ticket Id
@@ -99,7 +99,7 @@ def post():
      Make Sure You Will Tick Mark To the Next Card. If This Condition is True then Only Go To Block perform Redirection
   7. Now GetTicketById   Block
   
-     ![](https://github.com/makerobos/tickets/blob/master/getticketbyid_block.PNG)
+     ![](https://github.com/makerobos/tickets/blob/master/images/getticketbyid_block.PNG)
   
   9. Now in this First Card is User Input in which Bot Says to User. Ok Give me Your Ticket Id and Then User Will Provide Their Ticket 
      Id and The Id Will Be Stored in the {{TicketID}} attribute 
@@ -136,7 +136,7 @@ def post():
         ```
    11. See Below The Overall ChatBot Response 
    
-       ![](https://github.com/makerobos/tickets/blob/master/get_ticketbyid_chatbot.jpeg)      
+       ![](https://github.com/makerobos/tickets/blob/master/images/get_ticketbyid_chatbot.jpeg)      
       
       
 ## Now We Will Get The Status of the Ticket through the Problem (Without Using Ticket Id)
@@ -146,16 +146,16 @@ def post():
       * Are You Facing Some Problem 
       * If User Say No, Then
       
-       ![](https://github.com/makerobos/tickets/blob/master/StatusByTicketIdfirst.PNG)
+       ![](https://github.com/makerobos/tickets/blob/master/images/StatusByTicketIdfirst.PNG)
        
       * Do You Want To Check The Status 
       * If Client Say Yes 
       * Then Redirected it to the Our New Block which is Get Ticket 
   3. In Our Get Ticket Block
       
-      ![](https://github.com/makerobos/tickets/blob/master/status_by_ticketid_getticblock.PNG)
+      ![](https://github.com/makerobos/tickets/blob/master/images/status_by_ticketid_getticblock.PNG)
       
-      ![](https://github.com/makerobos/tickets/blob/master/gotoblock_getticketbyid.PNG)
+      ![](https://github.com/makerobos/tickets/blob/master/images/gotoblock_getticketbyid.PNG)
       
   4. Check Your Status Using:- We Have Two Options for that
        * Do You Have Ticket Id
@@ -169,11 +169,11 @@ def post():
         4.1 Looking For a Particular Problem Status
         1. This Below Diagram is Nothing But The Continuation of GetTicket Block
           
-        ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probFirst.PNG)
+        ![](https://github.com/makerobos/tickets/blob/master/images/look_a_single_probFirst.PNG)
         
-        ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probSecond.PNG)
+        ![](https://github.com/makerobos/tickets/blob/master/images/look_a_single_probSecond.PNG)
         
-        ![](https://github.com/makerobos/tickets/blob/master/look_a_single_probThird.PNG)
+        ![](https://github.com/makerobos/tickets/blob/master/images/look_a_single_probThird.PNG)
         
         2. HasTicketId contains Without Having Ticket Id At This Time If This Condition is True Than Our Next 2 Card Will Be Process.              Than Our Next Card Process Start In Which Bot Will take The Email Id From The User And Stored in The {{Email}} Attribute
            And Says OK According To The Next Card Situation. Than Ask For A Looking For a Paticular Problem Status and All Problem                  Status. In This case We Will Choose Looking For a Particular Problem Status And Particluar Choosed Section Value Stored in 
@@ -210,14 +210,14 @@ def post():
              ```
         5. See Below The Overall Chat Response
         
-           ![](https://github.com/makerobos/tickets/blob/master/ChatLookForasingleproblem.jpeg)
+           ![](https://github.com/makerobos/tickets/blob/master/images/ChatLookForasingleproblem.jpeg)
       
         ## Now We Will Get The Status of all the Tickets (How Many are open, How Many are closed, How many are pending) 
         
         4.2 Same Condition. We Are in GetTicket Block If User Will Choose All Problem Status Then Chosen All Problem Status Stored in               the {{problem_status}}. Read Previous Example Clearly For Better Understanding. 
         1. See Below The Story Builder 
             
-           ![](https://github.com/makerobos/tickets/blob/master/allproblemstatus.PNG)
+           ![](https://github.com/makerobos/tickets/blob/master/images/allproblemstatus.PNG)
            
         2. problem_status Now Contains All Problem Status If This Condition is True Than Next 2 Cards Come In The Picture In First Card            Bot Will say Ok You Want Your All Problem Status , And Then Json Api Card In Which We Pass Email As A Parameter To The Flask            Api. Note We Use Email in this above Case And in This Case Because Through This email We Will Find The User as Unique. 
         3. Now We Will See The Falsk API Code 
@@ -265,7 +265,7 @@ def post():
            ```
         4. See Below The Overall Chat Response
         
-           ![](https://github.com/makerobos/tickets/blob/master/chat_All_Problem_Status.jpeg)
+           ![](https://github.com/makerobos/tickets/blob/master/images/chat_All_Problem_Status.jpeg)
            
            
            
