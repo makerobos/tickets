@@ -5,9 +5,9 @@ from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
 
-url = 'https://puneetmakerobos.zendesk.com/api/v2/tickets.json'
-user = 'puneetmakerobos4@gmail.com/token'
-pwd = 'sfd6aTgkX94Cq7HxB0wczYMjl5XB3nncNZ9LjH8J'
+url = 'https://<subdomain>.zendesk.com/api/v2/tickets.json'
+user = '<useremail>/token'
+pwd = 'sfd6aTgkX94Cq7HxB9wczYMjl5XB5nncNZ9LjH8J'
 # define app using Flask
 app = Flask(__name__)
 
